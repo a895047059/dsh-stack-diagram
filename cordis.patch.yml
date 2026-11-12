@@ -1,0 +1,13 @@
+# dsh-stack-diagram bundle patch
+#
+# Single host row: registers the bundled `stack-diagram` skill into the global
+# skill registry and adds one system-prompt routing section so the model picks
+# the skill up on its own when a task calls for an architecture / stack /
+# topology / data-flow picture.
+#
+# Everything the skill needs (SKILL.md, assets/template.html, fonts, the Python
+# scripts) ships inside this package under `skill/`, so installing the bundle is
+# the whole installation — nothing to copy into ~/.dsh/skills.
+- insert:
+    - id: stack-diagram
+      name: "dsh-stack-diagram"

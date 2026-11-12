@@ -1,0 +1,66 @@
+{
+  "name": "dsh-stack-diagram",
+  "version": "1.0.0",
+  "description": "Bundles the stack-diagram architecture-diagram skill into DeepSeek Harness as a global skill, plus a system-prompt routing section so the model draws diagrams on its own.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/",
+    "skill/",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md",
+    "NOTICE",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a895047059/dsh-stack-diagram.git"
+  },
+  "homepage": "https://github.com/a895047059/dsh-stack-diagram#readme",
+  "bugs": {
+    "url": "https://github.com/a895047059/dsh-stack-diagram/issues"
+  },
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.1.2-rc.1"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-skill": ">=0.1.2-rc.1",
+    "@deepseek-ai/dsh-system-prompt": ">=0.1.2-rc.1",
+    "@deepseek-ai/cordis": "^4.0.2"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-skill": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-system-prompt": {
+      "optional": true
+    },
+    "@deepseek-ai/cordis": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-skill",
+    "deepseek-harness",
+    "architecture-diagram",
+    "stack-diagram",
+    "diagram",
+    "skill"
+  ]
+}

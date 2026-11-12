@@ -1,0 +1,34 @@
+dsh-stack-diagram
+Copyright (c) 2026 养花怪兽 (GitHub: a895047059)
+
+This package bundles third-party material. The original notices follow.
+
+------------------------------------------------------------------------------
+1. stack-diagram — the skill body under skill/
+------------------------------------------------------------------------------
+Source:  https://github.com/caru-ini/stack-diagram
+License: MIT
+Copyright (c) 2026 caru-ini
+
+The directory skill/ (SKILL.md, assets/, references/, scripts/) is copied
+verbatim from that project. It is not modified here; every change made by this
+plugin lives in lib/index.js.
+
+------------------------------------------------------------------------------
+2. Fonts — skill/assets/fonts/
+------------------------------------------------------------------------------
+Geist          — SIL Open Font License 1.1, Copyright (c) 2024 Vercel
+JetBrains Mono — SIL Open Font License 1.1, Copyright (c) 2020 JetBrains s.r.o.
+
+Both are redistributed under the OFL, which permits bundling and redistribution
+as part of a larger work provided the fonts are not sold on their own.
+
+------------------------------------------------------------------------------
+3. Icons — fetched at run time, not redistributed here
+------------------------------------------------------------------------------
+skill/scripts/fetch_icons.py downloads brand marks on demand from svgl
+(https://svgl.app), devicon (https://devicon.dev), gilbarbara/logos
+(https://github.com/gilbarbara/logos), Lucide (https://lucide.dev), and the
+official AWS / Google Cloud / Azure architecture icon packages. Those marks are
+the trademarks of their respective owners and are not covered by this package's
+license. No icon files are shipped inside this package.
