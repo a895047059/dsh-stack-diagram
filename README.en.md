@@ -72,6 +72,10 @@ dsh plugin --profile <profile> remove dsh-stack-diagram
 
 To update, run `add` again (a `link:` install needs re-adding against the new path).
 
+## Further reading
+
+[`docs/架构说明.md`](docs/架构说明.md) (Chinese) walks through why the plugin is shaped this way: the fields each seam takes, why `resourceBase` is the easiest thing to lose, why the routing section sits at order 700, the two async traps in the load sequence, and how to localize six failure modes.
+
 ## Three walls you will hit building something like this
 
 Found while building this package; the comments in `lib/index.js` carry them too.

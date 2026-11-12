@@ -74,6 +74,10 @@ dsh plugin --profile <profile> remove dsh-stack-diagram
 
 更新就是重装一次 `add`（`link:` 安装的本地版本需要重新 `add` 指向新路径）。
 
+## 进一步阅读
+
+[`docs/架构说明.md`](docs/架构说明.md) 逐块解释为什么长这样：两条接缝各自的字段语义、`resourceBase` 为什么是整个链里最容易漏的一项、`order: 700` 选在哪个位置、加载时序里的两个异步陷阱、六种失败模式怎么定位。
+
 ## 三个容易踩的坑
 
 装这个插件时踩过，后来写进 `lib/index.js` 的注释里。你做类似插件会撞上同样的墙：
